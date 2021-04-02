@@ -1,0 +1,12 @@
+Can anyone tell me what a library is?
+A library is a collection of precompiled routines that a program can use which someonehas already developed. Lazy programmers like us will make use of such code for different purposes.
+
+Today we will call such a library, physics engine. The physics engine is a library that allows falling and sliding boxes, bouncing balls, chains etc.
+
+To use the physics engine, we will use three objects created in matter.js library -> World, Engine and Bodies.
+● World is used to create the physical world and add objects to it.
+● The Engine module provides different methods and properties that allow you to control the behavior of different engines.
+● The Bodies module contains different methods to help you create rigid bodies with common shapes like a circle, rectangle or trapezium. Since these objects are a part of the Matter library, they are referenced as Matter.World, Matter.Engine and Matter.Bodies.
+
+Let's rename them as World, Engine and Bodies so that it is easy to write and read our code. This is called namespacing in
+programming.
