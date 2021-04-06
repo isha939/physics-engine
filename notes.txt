@@ -8,5 +8,22 @@ To use the physics engine, we will use three objects created in matter.js librar
 ● The Engine module provides different methods and properties that allow you to control the behavior of different engines.
 ● The Bodies module contains different methods to help you create rigid bodies with common shapes like a circle, rectangle or trapezium. Since these objects are a part of the Matter library, they are referenced as Matter.World, Matter.Engine and Matter.Bodies.
 
-Let's rename them as World, Engine and Bodies so that it is easy to write and read our code. This is called namespacing in
-programming.
+Let's rename them as World, Engine and Bodies so that it is easy to write and read our code. This is called namespacing in programming.
+
+In physics, the bounciness of an object is called "restitution". We can change the restitution of an object and create the bounciness effect.
+
+
+But rotate() and translate() functions change the entire game space's angle and translation. Every new object willbe drawn at this new angle and translation.
+To prevent this from happening , we can store the new translation and rotation setting and then revert back to the old setting when the object is drawn.
+
+
+This is done using push() and pop().
+● push(): captures the new setting.
+
+● pop(): reverts to the old setting.
+
+● translate(): to change the 0 of the axis to a given x and y position.
+
+links
+https://github.com/isha939/c23-new
+https://github.com/isha939/physics-engine
